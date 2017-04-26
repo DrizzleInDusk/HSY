@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <ImageView
+            android:id="@+id/vriation_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/vriation_item" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/vriation_item"
+            android:background="#77000000"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/rl1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="寻找下一个知名主播，征集进行中"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" >
+
+                <TextView
+                    android:id="@+id/join"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/rl1_v"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="2dp"
+                    android:text="我要参加"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/rl1_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

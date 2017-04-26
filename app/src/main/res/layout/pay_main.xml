@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <Button 
+        android:id="@+id/button_htwx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="调用后台微信支付接口"/>
+    <Button 
+        android:id="@+id/button_wx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="调用微信客户端支付界面"/>
+
+</LinearLayout>

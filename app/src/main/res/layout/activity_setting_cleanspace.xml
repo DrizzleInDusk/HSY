@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bangdan_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="清理缓存"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/clear_item1_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="15dp"
+                        android:text="总占用空间"
+                        android:textColor="@color/black_light"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/clear_item1_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/setting_clean2"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/clear_item1_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/clear_item1_img"
+                        android:text="0.00KB"
+                        android:textColor="@color/appblue"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/ashy_light" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/clear_item2_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="15dp"
+                        android:text="下载占用"
+                        android:textColor="@color/black_light"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/clear_item2_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/setting_clean2"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/clear_item2_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/clear_item2_img"
+                        android:text="0.00KB"
+                        android:textColor="@color/appblue"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/ashy_light" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                   <TextView
+                        android:id="@+id/clear_item3_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="15dp"
+                        android:text="缓存占用"
+                        android:textColor="@color/black_light"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/clear_item3_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/setting_clean2" />
+
+                    <TextView
+                        android:id="@+id/clear_item3_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/clear_item3_img"
+                        android:text="0.00KB"
+                        android:textColor="@color/appblue"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

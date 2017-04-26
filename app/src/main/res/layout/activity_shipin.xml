@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/shipin_top_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/blue" />
+
+            <!--<include layout="@layout/activity_shipin_menu" />-->
+
+            <ImageView
+                android:id="@+id/tab_bd_vPager"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/scrollimg1"
+                android:persistentDrawingCache="animation" />
+            <com.zm.hsy.myview.MyListView
+                android:id="@+id/shipin_item_viewp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:groupIndicator="@null" />
+
+            <!--<include layout="@layout/activity_shipin_item1" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/appblue"
+        android:gravity="center"
+        android:text="HSY资源文件"
+        android:textColor="@color/white_dark"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/filessssimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/kaiimg" />
+
+        <TextView
+            android:id="@+id/filepathname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="/sdk"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/filepathup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="返回"
+            android:textColor="@color/black_light"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/file_viewp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:groupIndicator="@null"
+        android:scrollbars="none" />
+
+</LinearLayout>

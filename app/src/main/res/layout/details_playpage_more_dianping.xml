@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/huise" />
+
+    <RelativeLayout
+        android:id="@+id/dianping_more"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" >
+
+        <TextView
+            android:id="@+id/details_dianping_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="查看更多"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/huise" />
+
+    <RelativeLayout
+        android:id="@+id/message_rl2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/letter_details_back" >
+
+            <EditText
+                android:id="@+id/playpage_pinglun_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="写评论"
+                android:imeOptions="actionSend"
+                android:textColor="@color/huise"
+                android:textSize="13sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/playpage_dianping_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/layout_yuanjiao_lv"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/playpage_dianping_xihuan"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/playpage_dianping_fenxiang"
+            android:padding="15dp"
+            android:src="@drawable/dianzan_press" />
+
+        <ImageView
+            android:id="@+id/playpage_dianping_fenxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:layout_toLeftOf="@+id/playpage_dianping_send"
+            android:src="@mipmap/playpage_dianping_fenxiang_hui"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/huise" />
+
+</LinearLayout>

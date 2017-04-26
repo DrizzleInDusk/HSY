@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:poplar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/head_back" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/contacts_top_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="找手机通讯录朋友"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/contacts_top_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="邀请"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl" >
+    </ExpandableListView>
+
+    <com.zm.hsy.tools.pinyinlist.FancyIndexer
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl"
+        poplar:additionalTipOffset="40dip"
+        poplar:fontColor="#ffa0a0a0"
+        poplar:maxBezierHeight="150dip"
+        poplar:maxBezierWidth="180dip"
+        poplar:maxFontSize="60"
+        poplar:minFontSize="32"
+        poplar:tipFontSize="72"
+        poplar:widthOffset="15dip" />
+
+    <TextView
+        android:id="@+id/tv_index_center"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_index"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

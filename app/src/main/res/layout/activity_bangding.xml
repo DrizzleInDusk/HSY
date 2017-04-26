@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back">
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="账号绑定"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/wxbd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/wximg"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="微信绑定"
+                android:textColor="@color/black_light"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/wxbd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/wxbd_iv"
+                android:gravity="center"
+                android:text="已绑定"
+                android:textColor="@color/ashy_dark_dark"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/wxbd_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/myown_back_bt" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="40dp"
+            android:background="@color/ashy_dark_dark" />
+
+        <RelativeLayout
+            android:id="@+id/wbbd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/wbimg"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="微博绑定"
+                android:textColor="@color/black_light"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/wbbd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/wbbd_iv"
+                android:gravity="center"
+                android:text="已绑定"
+                android:textColor="@color/ashy_dark_dark"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/wbbd_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/myown_back_bt" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="40dp"
+            android:background="@color/ashy_dark_dark" />
+
+        <RelativeLayout
+            android:id="@+id/qqbd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/qqimg"
+                android:drawablePadding="18dp"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:text="QQ 绑定"
+                android:textColor="@color/black_light"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/qqbd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/qqbd_iv"
+                android:gravity="center"
+                android:text="已绑定"
+                android:textColor="@color/ashy_dark_dark"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/qqbd_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/myown_back_bt" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="40dp"
+            android:background="@color/ashy_dark_dark" />
+        <RelativeLayout
+            android:id="@+id/sjbd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/shoujiimg"
+                android:drawablePadding="18dp"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:text="手机绑定"
+                android:textColor="@color/black_light"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/sjbd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/sjbd_iv"
+                android:gravity="center"
+                android:text="已绑定"
+                android:textColor="@color/ashy_dark_dark"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/sjbd_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/myown_back_bt" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

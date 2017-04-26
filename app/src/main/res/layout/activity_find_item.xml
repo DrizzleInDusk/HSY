@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/sing_line"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/find_rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp" >
+
+            <com.zm.hsy.myview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/find_head"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/yyp"
+                app:riv_corner_radius="100dip"
+                app:riv_oval="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+              android:id="@+id/find_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/find_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ashy_dark_dark"
+                android:text="玩兔电台"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/find_ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/find_audio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="声音"
+                    android:textColor="@color/huise"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/find_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="粉丝"
+                    android:textColor="@color/huise"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/find_zuiduo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="有声小说"
+                android:textColor="@color/appblue"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/find_cutandadd_press"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/cutandadd_press"/>
+    </LinearLayout>
+
+</LinearLayout>

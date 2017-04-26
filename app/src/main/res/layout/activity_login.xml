@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ashy_light" >
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/bangdan_top"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/head_back" >
+
+                <ImageView
+                    android:id="@+id/back_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/tabvf2_back" />
+
+                <TextView
+                    android:id="@+id/login_text_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/login_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/dian_shu" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/login_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@mipmap/yuanju_bai"
+                android:hint="请输入昵称/手机号"
+                android:paddingLeft="10dp"
+                android:textColor="@color/huise"
+                android:textColorHint="@color/huise"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/yuanju_bai" >
+
+                <EditText
+                    android:id="@+id/login_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/login_password"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/huise"
+                    android:textColorHint="@color/huise"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/login_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/login_password_press" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" >
+
+                <TextView
+                    android:id="@+id/login_forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="忘记密码"
+                    android:textColor="@color/appblue"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" >
+
+                <EditText
+                    android:id="@+id/login_yanzhengma_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/v1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:hint="请输入验证码"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/ashy_dark"
+                    android:textColorHint="@color/huise"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/login_yanzhengma_img"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/v1"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/yanzhengma_tv1"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/v1"
+                    android:gravity="center"
+                    android:text="点此获取验证码"
+                    android:textColor="@color/ashy_dark"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/login_log_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/v2"
+                    android:src="@drawable/login_dl_press" />
+
+                <View
+                    android:id="@+id/v2"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/login_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/v2"
+                    android:src="@drawable/login_zc_press" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/login_tv1"
+                    android:background="@color/single_line" />
+
+                <TextView
+                    android:id="@+id/login_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="第三方账号登录"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/login_tv1"
+                    android:background="@color/single_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/login_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/qq" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/login_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/wx" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/login_wb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/wb" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

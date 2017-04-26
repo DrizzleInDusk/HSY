@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pager_tuijian_jingpintitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tuijian_item_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/item_menu_play"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tuijian_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tuijian_item_img2"
+            android:singleLine="true"
+            android:text="精品"
+            android:textColor="@color/black_light"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/tuijian_item_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/tuijian_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="1dp"
+                android:background="@mipmap/item_back_icon" />
+
+            <TextView
+                android:id="@+id/tj_more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tuijian_item_img"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="更多"
+                android:textColor="@color/huise"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashy" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/white" />
+    <com.zm.hsy.myview.MyGridView
+        android:id="@+id/tabvf1_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="4dip"
+        android:background="@color/white"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dip"/>
+</LinearLayout>

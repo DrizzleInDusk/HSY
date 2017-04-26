@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/bangdan_top"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/head_back" >
+
+                <ImageView
+                    android:id="@+id/back_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/tabvf2_back" />
+
+                <TextView
+                    android:id="@+id/bangdan_text_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/bangdan_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/letter_details_share" />
+            </RelativeLayout>
+
+            <com.zm.hsy.myview.MyListView
+                android:id="@+id/bangdan_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:groupIndicator="@null" />
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/blue"/>
+        </LinearLayout>
+    </ScrollView>
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/sc"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/activity_playbar" />
+    </RelativeLayout>
+
+</RelativeLayout>

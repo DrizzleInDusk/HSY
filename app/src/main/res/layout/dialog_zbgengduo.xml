@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_zbgd_hmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="加入黑名单"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/dialog_zbgd_fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="返回首页"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dialog_zbgd_qx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="取消"
+        android:textSize="18sp" />
+</LinearLayout>

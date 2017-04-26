@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@mipmap/head_back" >
+
+            <ImageView
+                android:id="@+id/back_top"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/tabvf2_back" />
+
+            <TextView
+                android:id="@+id/tabvf2_top_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/tabvf2_sousuo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabvf2_rl_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <com.zm.hsy.myview.SyncHorizontalScrollView
+                android:id="@+id/tabvf2_mHsv"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/ashy"
+                android:scrollbars="none" >
+
+                <RelativeLayout
+                    android:id="@+id/tabvf2_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ashy" >
+
+                    <RadioGroup
+                        android:id="@+id/tabvf2_rg_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="38dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+                    </RadioGroup>
+
+                    <ImageView
+                        android:id="@+id/tabvf2_iv_indicator"
+                        android:layout_width="1dip"
+                        android:layout_height="2dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="@mipmap/xuanzhongtiao"
+                        android:scaleType="matrix" />
+                </RelativeLayout>
+            </com.zm.hsy.myview.SyncHorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/tabvf2_iv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="1dip"
+                android:src="@mipmap/iv_navagation_scroll_left"
+                android:visibility="gone" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/tabvf2_iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="1dip"
+                android:src="@mipmap/iv_navagation_scroll_right"
+                android:visibility="visible" >
+            </ImageView>
+        </RelativeLayout>
+
+        <com.zm.hsy.myview.CustomViewPager
+            android:id="@+id/tabvf2_mViewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/activity_playbar" />
+    </RelativeLayout>
+
+</RelativeLayout>

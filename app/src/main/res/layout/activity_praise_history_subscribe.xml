@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/phs_top"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@mipmap/head_back" >
+
+            <ImageView
+                android:id="@+id/back_top"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/tabvf2_back" />
+
+            <TextView
+                android:id="@+id/phs_top_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/phs_praise_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/phs_praise_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="共赞过0个声音"
+                        android:textColor="@color/single_line"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/phs_history_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/phs_history_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/phs_delete_tv"
+                            android:paddingRight="5dp"
+                            android:src="@mipmap/delete_img" />
+
+                        <TextView
+                            android:id="@+id/phs_delete_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="选择删除"
+                            android:textColor="@color/single_line"
+                            android:textSize="13dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/phs_history_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/phs_clear_tv"
+                            android:paddingRight="5dp"
+                            android:src="@mipmap/clear_img" />
+
+                        <TextView
+                            android:id="@+id/phs_clear_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="一键清空"
+                            android:textColor="@color/single_line"
+                            android:textSize="13dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.zm.hsy.myview.MyListView
+                    android:id="@+id/phs_viewp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none"
+                    android:groupIndicator="@null" />
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/blue"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/ll"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/activity_playbar" />
+    </RelativeLayout>
+
+</RelativeLayout>

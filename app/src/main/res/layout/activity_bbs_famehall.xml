@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/jj_top_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="名人堂"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/layout_yuanjiao"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/bbs_mybbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageView
+                        android:id="@+id/famehall_banzhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="5dp"
+                        android:src="@mipmap/famehall_banzhu" />
+
+                    <RelativeLayout
+                        android:id="@+id/head_rl"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_toRightOf="@+id/famehall_banzhu" >
+                        <com.zm.hsy.myview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/famehall_banzhu_head"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerInParent="true"
+                            android:background="@color/touming"
+                            android:scaleType="fitXY"
+                            app:riv_corner_radius="100dip"
+                            app:riv_oval="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/famehall_banzhu_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/head_rl"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="版主名"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/famehall_banzhu_blurb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@+id/head_rl"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="版主签名"
+                        android:textColor="@color/huise"
+                        android:textSize="12dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/famehall_banzhu_guanli"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible"
+                        android:layout_margin="13dp"
+                        android:background="@mipmap/yuanju_2" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="管理"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <com.zm.hsy.myview.MyListView
+                    android:id="@+id/famehall_guanli_viewp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_yuanjiao"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none"
+                    android:groupIndicator="@null"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/qiandao_rl"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <ImageView
+                    android:id="@+id/famehall_qiandao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/famehall_huoyue" />
+
+                <TextView
+                    android:id="@+id/famehall_qiandaotv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/famehall_qiandao"
+                    android:paddingLeft="10dp"
+                    android:text="签到排行"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_yuanjiao"
+                android:orientation="vertical" >
+
+                <com.zm.hsy.myview.MyListView
+                    android:id="@+id/famehall_qiandao_viewp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_yuanjiao"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none"
+                    android:groupIndicator="@null"
+                    android:scrollbars="none" />
+
+                <RelativeLayout
+                    android:id="@+id/famehall_qiandao_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/famehall_qiandao_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="10dp"
+                        android:src="@mipmap/more_down_lv" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/huoyue_rl"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <ImageView
+                    android:id="@+id/famehall_huoyue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/famehall_huoyue" />
+
+                <TextView
+                    android:id="@+id/famehall_huoyuetv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/famehall_huoyue"
+                    android:paddingLeft="10dp"
+                    android:text="活跃排行"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_yuanjiao"
+                android:orientation="vertical" >
+
+                <com.zm.hsy.myview.MyListView
+                    android:id="@+id/famehall_huoyue_viewp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_yuanjiao"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none"
+                    android:groupIndicator="@null"
+                    android:scrollbars="none" />
+
+                <RelativeLayout
+                    android:id="@+id/famehall_huoyue_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/famehall_huoyue_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="10dp"
+                        android:src="@mipmap/more_down_lv" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/jifen_rl"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <ImageView
+                    android:id="@+id/famehall_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/famehall_huoyue" />
+
+                <TextView
+                    android:id="@+id/famehall_jifentv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/famehall_jifen"
+                    android:paddingLeft="10dp"
+                    android:text="消费积分排行"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_yuanjiao"
+                android:orientation="vertical" >
+
+                <com.zm.hsy.myview.MyListView
+                    android:id="@+id/famehall_jifen_viewp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_yuanjiao"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none"
+                    android:groupIndicator="@null"
+                    android:scrollbars="none" />
+
+                <RelativeLayout
+                    android:id="@+id/famehall_jifen_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/famehall_jifen_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="10dp"
+                        android:src="@mipmap/more_down_lv" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

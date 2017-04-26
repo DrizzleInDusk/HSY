@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@mipmap/playbar_back" >
+        <RelativeLayout
+            android:id="@+id/playbar_touxiang_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <com.zm.hsy.myview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/playbar_touxiang"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@color/touming"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="100dip"
+                app:riv_oval="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/playbar_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/playbar_play"
+            android:layout_toRightOf="@+id/playbar_touxiang_rl"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/playbar_play"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="35dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/playbar_press" />
+
+        <ImageView
+            android:id="@+id/playbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="2dp"
+            android:paddingRight="20dp"
+            android:visibility="invisible"
+            android:src="@mipmap/playbar_right" />
+    </RelativeLayout>
+
+</RelativeLayout>

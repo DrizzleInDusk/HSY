@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tab_frag1_title"
+        layout="@layout/tab_frag1_title" />
+
+    <FrameLayout
+        android:id="@+id/tab_frag1_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll" >
+    </FrameLayout>
+
+</LinearLayout>

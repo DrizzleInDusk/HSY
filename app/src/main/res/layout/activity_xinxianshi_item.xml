@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/ashy_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.zm.hsy.myview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/xxsitem_cover"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/details_img3"
+                app:riv_corner_radius="100dip"
+                app:riv_oval="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/xxsitem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="安上监控两大环节"
+            android:textColor="@color/juhuangse"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/xxsitem_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="安上监控两大环节"
+            android:textColor="@color/ashy_dark_dark"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xxsalbum_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/xxsalbum_item_cover"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/letter_item_img1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/xxsalbum_item_albumName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公主闯秦关"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/xiansanjiao" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/xxsalbum_item_playAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.7万"
+                    android:textColor="@color/huise"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp">
+
+            <ImageView
+                android:id="@+id/imgbk_item_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/item_back_icon" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp" />
+
+
+    <LinearLayout
+        android:id="@+id/xxsaudio_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp">
+
+            <com.zm.hsy.myview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/xxsaudio_item_cover"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/details_img3"
+                app:riv_corner_radius="100dip"
+                app:riv_oval="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/details_ll"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/xxsaudio_item_audioName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="公主闯秦关预告片花"
+                android:textSize="13dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/xxsaudio_item_playAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="By "
+                    android:textColor="@color/huise"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/sing_line"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp" />
+
+    <LinearLayout
+        android:id="@+id/guanzhu_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/guanzhu_item_rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp">
+
+            <com.zm.hsy.myview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/guanzhu_item_head"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/yyp"
+                app:riv_corner_radius="100dip"
+                app:riv_oval="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/guanzhu_item_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/guanzhu_item_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩兔电台"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/guanzhu_item_ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/guanzhu_item_audio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="声音"
+                    android:textColor="@color/huise"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/guanzhu_item_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="粉丝"
+                    android:textColor="@color/huise"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/guanzhu_item_zuiduo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="有声小说"
+                android:textColor="@color/appblue"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/guanzhu_item_cutandadd_press"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/cutandadd_press" />
+    </LinearLayout>
+</LinearLayout>

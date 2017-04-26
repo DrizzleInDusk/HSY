@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/find_top_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="积分购买"
+            android:textColor="@color/black_light"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@mipmap/jifen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="“温馨提示:一元等于一积分”"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/rmb2"
+                        android:layout_width="66dp"
+                        android:layout_height="27dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/dashang_press"
+                        android:gravity="center"
+                        android:text="￥2"
+                        android:textColor="@color/appblue"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/rmb3"
+                        android:layout_width="66dp"
+                        android:layout_height="27dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/dashang_press"
+                        android:gravity="center"
+                        android:text="￥3"
+                        android:textColor="@color/appblue"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/rmb5"
+                        android:layout_width="66dp"
+                        android:layout_height="27dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/dashang_press"
+                        android:gravity="center"
+                        android:text="￥5"
+                        android:textColor="@color/appblue"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/rmb10"
+                        android:layout_width="66dp"
+                        android:layout_height="27dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/dashang_press"
+                        android:gravity="center"
+                        android:text="￥10"
+                        android:textColor="@color/appblue"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/rmb50"
+                        android:layout_width="66dp"
+                        android:layout_height="27dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/dashang_press"
+                        android:gravity="center"
+                        android:text="￥50"
+                        android:textColor="@color/appblue"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/rmbzdy"
+                        android:layout_width="66dp"
+                        android:layout_height="27dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/dashang_press"
+                        android:gravity="center"
+                        android:text="自定义"
+                        android:textColor="@color/appblue"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

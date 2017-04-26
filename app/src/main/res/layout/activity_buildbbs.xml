@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/buildbbs_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/buildbbs_top_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="填写申请信息"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@mipmap/buildbbs_beijing"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.zm.hsy.myview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/buildbbs_touxiang"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/buildbbs_touxiang"
+                        app:riv_border_color="@color/white"
+                        app:riv_border_width="2dip"
+                        app:riv_corner_radius="10dip"
+                        app:riv_tile_mode="clamp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="社区名称："
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/buildbbs_name_et"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:background="@color/ashy_light"
+                        android:hint="2-10字"
+                        android:maxLength="10"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/huise"
+                        android:textColorHint="@color/huise"
+                        android:textSize="13sp" >
+                    </EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="简介："
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/buildbbs_blurb_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/textView2"
+                        android:background="@color/ashy_light"
+                        android:gravity="top"
+                        android:hint="文字保持在300字以内"
+                        android:maxLength="300"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/huise"
+                        android:textColorHint="@color/huise"
+                        android:textSize="13sp" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <Button
+                    android:id="@+id/buildbbs_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/buildbbs_submit" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buildbbs_submit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:text="我们将在5个工作日内完成审核"
+                    android:textColor="@color/black_light"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

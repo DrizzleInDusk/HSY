@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/st_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/st_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:text="请选择背景音乐"
+            android:layout_toLeftOf="@+id/st_item_add"
+
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <ImageView
+            android:id="@+id/st_item_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:src="@mipmap/add_img"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/ashy"/>
+</LinearLayout>

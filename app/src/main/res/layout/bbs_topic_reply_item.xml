@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/reply_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/reply_single_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/single_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/reply_user_headrl"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp" >
+
+                <com.zm.hsy.myview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/reply_user_head"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/touming"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius="100dip"
+                    app:riv_oval="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/reply_user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reply_user_headrl"
+                android:layout_marginBottom="11dp"
+                android:layout_toRightOf="@+id/reply_user_headrl"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:text="熊孩子真烦！！！"
+                android:textColor="@color/appblue"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/reply_landlord_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reply_user_nickname"
+                android:layout_toRightOf="@+id/reply_user_nickname"
+                android:background="@color/appblue"
+                android:padding="2dp"
+                android:text="楼主"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_item_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:text="1楼"
+                android:textColor="@color/huise"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/reply_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/tv_item_floor"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:text="18小时前"
+                android:textColor="@color/huise"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/reply_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="熊孩子真烦！！！"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:id="@+id/reply_item_picturell"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/reply_item_picture1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitCenter"
+                    android:paddingLeft="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/reply_item_picture2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitCenter"
+                    android:paddingLeft="5dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/reply_item_picture3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="5dp"
+                    android:scaleType="fitCenter" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reply_yy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@color/ashy_light"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/reply_yyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="西门哎催牛"
+                android:textColor="@color/appblue"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/reply_yycontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text=" "
+                android:textColor="@color/huise"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/reply_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/reply_tv"
+                android:paddingBottom="9dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/pinglun_lv" />
+
+            <TextView
+                android:id="@+id/reply_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp"
+                android:text="回复"
+                android:textColor="@color/appblue"
+                android:textSize="11dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/yuanju"
+    android:button="@null"
+    android:checked="true"
+    android:gravity="center"
+    android:padding="3dp"
+    android:text="浪漫言情"
+    android:textColor="@color/black_light"
+    android:textSize="10dp" />

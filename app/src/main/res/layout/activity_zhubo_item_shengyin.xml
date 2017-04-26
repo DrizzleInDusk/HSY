@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/zhubo_shengyin_rl"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp" >
+        <RelativeLayout
+            android:id="@+id/head_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.zm.hsy.myview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/zhubo_shengyin_cover"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:background="@color/touming"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="100dip"
+                app:riv_oval="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/zhubo_shengyin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/head_rl"
+            android:text="公主闯秦关"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/zhubo_shengyin_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/head_rl"
+            android:text="最近更新：一天前"
+            android:textColor="@color/huise"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/head_rl"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/xiansanjiao" />
+
+        <TextView
+            android:id="@+id/zhubo_shengyin_playAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="4.7万"
+            android:textColor="@color/huise"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/zhubo_shengyin_playAmount"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/letter_details_pinglun" />
+
+        <TextView
+            android:id="@+id/zhubo_shengyin_commentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="15"
+            android:textColor="@color/huise"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/zhubo_shengyin_commentNumber"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/letter_details_time" />
+
+        <TextView
+            android:id="@+id/zhubo_shengyin_timeLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="12:12"
+            android:textColor="@color/huise"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/zhubo_shengyin_addTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="12小时前"
+            android:textColor="@color/huise"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/zhubo_shengyin_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:src="@mipmap/xiazai" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:visibility="invisible"
+            android:padding="10dp"
+            android:src="@mipmap/guangbo_zanting" />
+    </RelativeLayout>
+
+</LinearLayout>

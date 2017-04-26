@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/guangbo_title3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" >
+
+            <ImageView
+                android:id="@+id/guangbo_title3_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/item_menu_play"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/guangbo_title3_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/guangbo_title3_img1"
+                android:singleLine="true"
+                android:text="播放历史"
+                android:textColor="@color/huise"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/guangbo_title3_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/item_back_icon"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:text="更多"
+                android:textColor="@color/huise"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <com.zm.hsy.myview.MyListView
+            android:id="@+id/guangbo_his_viewp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:groupIndicator="@null" />
+		<TextView
+		    android:id="@+id/guangbo_his_tv" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="暂无记录"
+		    android:textColor="@color/black_light"
+		    android:textSize="15dp"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

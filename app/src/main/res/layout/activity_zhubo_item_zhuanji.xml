@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="4dp" >
+
+        <ImageView
+            android:id="@+id/zhubo_zhuanji_cover"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/tu9854_1" />
+
+        <TextView
+            android:id="@+id/zhubo_zhuanji_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/zhubo_zhuanji_cover"
+            android:text="公主闯秦关"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/zhubo_zhuanji_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/zhubo_zhuanji_cover"
+            android:text="最近更新：一天前"
+            android:textColor="@color/huise"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/xiansanjiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/zhubo_zhuanji_cover"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/xiansanjiao" />
+
+        <TextView
+            android:id="@+id/zhubo_zhuanji_playAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@+id/xiansanjiao"
+            android:text="4.7万"
+            android:textColor="@color/huise"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/bolang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/zhubo_zhuanji_playAmount"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/bolang" />
+
+        <TextView
+            android:id="@+id/zhubo_zhuanji_episode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/bolang"
+            android:text="15集"
+            android:textColor="@color/huise"
+            android:textSize="11dp" />
+    </RelativeLayout>
+
+</LinearLayout>

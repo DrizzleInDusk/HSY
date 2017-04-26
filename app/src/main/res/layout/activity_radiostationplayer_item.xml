@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/station_liebiao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/stationlist" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="13dp"
+            android:text="节目单"
+            android:textColor="@color/huise"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/station_playbt"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="invisible"
+            android:src="@mipmap/playpage_leftbt" />
+
+        <ImageView
+            android:id="@+id/station_playbt"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/playbt_press" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/station_playbt"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="invisible"
+            android:src="@mipmap/playpage_rightbt" />
+
+        <ImageView
+            android:id="@+id/station_dingshi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="25dp"
+            android:src="@mipmap/timer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="定时关闭"
+            android:textColor="@color/huise"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+</LinearLayout>

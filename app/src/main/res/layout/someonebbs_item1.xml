@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bbs_item_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/blue" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/iv_topstick1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:src="@mipmap/topstick" />
+
+            <TextView
+                android:id="@+id/bbs_item_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_topstick1"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="熊孩子真烦！！！"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bbs_item_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/blue" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/iv_topstick2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:src="@mipmap/topstick" />
+
+            <TextView
+                android:id="@+id/bbs_item_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_topstick2"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="熊孩子真烦！！！"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bbs_item_layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/blue" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/iv_topstick3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:src="@mipmap/topstick" />
+
+            <TextView
+                android:id="@+id/bbs_item_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_topstick3"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="熊孩子真烦！！！"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

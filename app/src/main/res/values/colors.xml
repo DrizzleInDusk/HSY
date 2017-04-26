@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1abc9c</color>
+    <color name="colorPrimaryDark">#1abc9c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="button_press">#17A086</color>
+    <color name="appblue">#1abc9c</color>
+    <color name="blue">#E9F6FC</color>
+    <color name="blue_light">#ecf5ff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="default_background">#F1F2F6</color>
+    <color name="white_dark">#F1F1F1</color>
+    <color name="white_light">#E4E4E4</color>
+    <color name="border">#A5E3DE</color>
+    <color name="green_light">#00E89C</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#494949</color>
+    <color name="huise">#7B7D7C</color>
+    <color name="ashy">#BFBFBF</color>
+    <color name="ashy_dark">#A1A1A1</color>
+    <color name="ashy_dark_dark">#757A7D</color>
+    <color name="ashy_light">#E5E5E5</color>
+    <color name="touming">#00000000</color>
+    <color name="red">#FF0000</color>
+    <color name="juhuangse">#ff8e1e</color>
+    <color name="textcolor1">#ffbc1e</color>
+    <color name="textcolor2">#1effac</color>
+    <color name="bg_base">#e3e3e3</color>
+    <color name="single_line">#acacac</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="grid_line">#ee01a9a9</color>
+    <color name="timecode">#ddffffdd</color>
+    <color name="timecode_shadow">#aa000000</color>
+    <color name="bg_lin_95">#959595</color>
+    <color name="bg_whitef5">#F5F5F5</color>
+
+    <color name="black_33">#333333</color>
+    <color name="half_transparent_black">#BB000000</color>
+    <color name="light_black">#141414</color>
+    <color name="line_and_outline_grey">#d9d9d9</color>
+</resources>

@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/daifabu_single_line"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true">
+
+                <com.zm.hsy.myview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/daifabu_coverivi_iv"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/touming"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="100dip"
+                    app:riv_oval="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/daifabu_paly_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/small_playbar_press" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/daifabu_ll"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/daifabu_audioName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="211313s"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/daifabu_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="by"
+                android:textColor="@color/black_light"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/daifabu_iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/letter_details_time" />
+
+                <TextView
+                    android:id="@+id/daifabu_timeLong_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="08:50"
+                    android:textColor="@color/huise"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/daifabu_iv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/wenjianjia" />
+
+                <TextView
+                    android:id="@+id/daifabu_audiosize_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/huise"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/daifabu_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="发布"
+                android:textColor="@color/appblue"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/daifabu_addtime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="23天前"
+                android:textColor="@color/huise"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

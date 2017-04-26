@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bbs_single_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/single_line" />
+
+    <LinearLayout
+        android:id="@+id/bbs_community"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/bbs_num"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp">
+
+            <com.zm.hsy.myview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bbs_cover"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bbs_img2"
+                app:riv_border_color="@color/white"
+                app:riv_border_width="2dip"
+                app:riv_corner_radius="10dip"
+                app:riv_tile_mode="clamp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bbs_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/bbs_cover_rl"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="影视天地"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/bbs_blurb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bbs_name"
+                android:layout_toRightOf="@+id/bbs_cover_rl"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:text="最具吐槽两不误"
+                android:textColor="@color/huise"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/bbs_memCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bbs_blurb"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:text="关注：1213154"
+                android:textColor="@color/juhuangse"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/back_blue" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+//    signingConfigs {
+//        config {
+//            keyAlias 'hsy'
+//            keyPassword 'zm1234'
+////            storeFile file('E:/Apk/zm_hsy.jks')
+//            storeFile file('D:/workper/ISIM/HSY/hsyjks/zm_hsy.jks')
+//            storePassword 'zm1234'
+//        }
+//    }
+
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+    defaultConfig {
+        applicationId "com.zm.hsy"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 3
+        versionName "3.0"
+    }
+    buildTypes {
+        release {
+//                      shrinkResources true // This must be first
+//            minifyEnabled false   // This must be after shrinkResources
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+//                    'proguard-rules.pro'
+
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+        }
+        debug{
+//            signingConfig signingConfigs.config
+        }
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    android {
+        useLibrary 'org.apache.http.legacy'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/alipaySdk-20160516.jar')//支付宝
+    compile 'org.xutils:xutils:3.3.36'//开发框架包含注解 网络 图片 db
+    compile files('libs/cyberplayer-sdk.jar')//百度媒体云
+    compile 'cn.qqtheme.framework:FilePicker:1.2.2'//文件选择器
+    compile 'com.czt.mp3recorder:library:1.0.4'//录制音频并自动转成mp3格式
+    compile 'cn.hugeterry.updatefun:updatefun:1.8.4'//fir.im自动更新
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.amap.api:location:latest.integration'
+    compile project(':alarmmanagerclock')
+}

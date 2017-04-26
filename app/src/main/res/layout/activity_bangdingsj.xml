@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back">
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="绑定手机号"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/round5_ashy">
+
+            <EditText
+                android:id="@+id/mobile_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/delete_mobile"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:paddingLeft="10dp"
+                android:textColor="@color/ashy_dark"
+                android:textColorHint="@color/ashy_dark"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/delete_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/off" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:text="绑定手机号可以找到更多好友"
+            android:textColor="@color/appblue"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/bdsj_next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/layout_yuanjiao_blue"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

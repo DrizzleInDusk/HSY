@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tabvf4_jiemudan_top"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@mipmap/head_back" >
+
+            <ImageView
+                android:id="@+id/back_top"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/tabvf2_back" />
+
+            <TextView
+                android:id="@+id/tabvf4_jiemudan_tvtop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="电台节目列表"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/yuanju_bkg" >
+
+            <RelativeLayout
+                android:id="@+id/tabvf4_jiemudan_rl1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/jiemudan_rl1_press" >
+
+                <TextView
+                    android:id="@+id/jiemudan_yesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="昨天"
+                    android:textColor="@color/appblue"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/appblue" />
+
+            <RelativeLayout
+                android:id="@+id/tabvf4_jiemudan_rl2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/jiemudan_rl2_press" >
+
+                <TextView
+                    android:id="@+id/jiemudan_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="今天"
+                    android:textColor="@color/appblue"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/appblue" />
+
+            <RelativeLayout
+                android:id="@+id/tabvf4_jiemudan_rl3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/jiemudan_rl3_press" >
+
+                <TextView
+                    android:id="@+id/jiemudan_tomorrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="明天"
+                    android:textColor="@color/appblue"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.zm.hsy.myview.MyListView
+            android:id="@+id/tabvf4_jiemudan_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:groupIndicator="@null" />
+
+        <RelativeLayout
+            android:id="@+id/tabvf4_jiemudan_item"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/jiemudan_item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="精彩节目重播"
+                android:textColor="@color/huise"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/jiemudan_item_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="00:00-4:30"
+                android:textColor="@color/huise"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/jiemudan_item_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:text="回听"
+                android:textColor="@color/huise"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/huise" />
+    </LinearLayout>
+
+</ScrollView>

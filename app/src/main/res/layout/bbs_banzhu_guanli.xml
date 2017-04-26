@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/banzhugu_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/banzhugu_top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="管理"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <com.zm.hsy.myview.MyListView
+                android:id="@+id/banzhu_guanli_viewp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layout_yuanjiao"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:groupIndicator="@null" />
+
+            <RelativeLayout
+                android:id="@+id/famehall_banzhu_guanli"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="13dp"
+                android:focusable="false"
+                android:focusableInTouchMode="true" >
+
+                <EditText
+                    android:id="@+id/banzhu_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/banzhu_tisheng"
+                    android:background="@drawable/layout_yuanjiao"
+                    android:hint="输入名字"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/huise"
+                    android:textColorHint="@color/huise"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/banzhu_tisheng"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="13dp"
+                    android:background="@mipmap/yuanju_2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="提升"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="160dp" >
+
+        <ImageView
+            android:id="@+id/morezhubo_head"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/morezhubo_img" />
+        <LinearLayout
+            android:id="@+id/morezhubo_ll"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/morezhubo_head"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/hasfocus"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/morezhubo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="阿斯顿"
+                    android:textColor="@color/black_light"
+                    android:textSize="18dp"  />
+                <ImageView
+                    android:id="@+id/morezhubo_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/morezhubo_name"
+                    android:padding="5dp"
+                    android:src="@mipmap/v"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/morezhubo_blurb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="阿斯顿"
+                android:textColor="@color/ashy_dark"
+                android:textSize="17dp"  />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_height="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/bolang"/>
+                <TextView
+                    android:id="@+id/morezhubo_shengyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="0"
+                    android:textColor="@color/ashy_dark"
+                    android:textSize="13dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="18dp"
+                    android:src="@mipmap/fens"/>
+                <TextView
+                    android:id="@+id/morezhubo_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="0"
+                    android:textColor="@color/ashy_dark"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/hasfocus"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/bt_guanzhu" />
+        <ImageView
+            android:id="@+id/morezhubo_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/morezhubo_head"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/guangbo_bofang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/morezhubo_iv"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:text="试听"
+            android:textColor="@color/ashy_dark_dark"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

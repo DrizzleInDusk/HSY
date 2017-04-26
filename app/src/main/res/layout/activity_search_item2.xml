@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <RelativeLayout
+            android:id="@+id/search_item1_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" >
+
+            <com.zm.hsy.myview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/search_album_cover"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/img_fang"
+                android:scaleType="centerCrop"
+                app:riv_border_color="@color/white_light"
+                app:riv_border_width="2dip"
+                app:riv_corner_radius="1dip"
+                app:riv_tile_mode="clamp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/search_item1_iv2"
+            android:layout_toRightOf="@+id/search_item1_rl"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/search_aublm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="专辑"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/search_aublm_blurb"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="共"
+                android:textColor="@color/black_light"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:id="@+id/search_item1_rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/item1_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/xiansanjiao" />
+
+                <TextView
+                    android:id="@+id/search_aublm_playAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/item1_iv1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:text="aaaaa"
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/item1_iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/search_aublm_playAmount"
+                    android:src="@mipmap/bolang" />
+
+                <TextView
+                    android:id="@+id/search_aublm_episode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/item1_iv2"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_item1_iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:src="@mipmap/back_icon" />
+    </RelativeLayout>
+
+</LinearLayout>

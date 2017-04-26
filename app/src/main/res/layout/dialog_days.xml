@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/days_xq1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/download_bottom_press"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="星期一"
+            android:textColor="@color/black_light"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/days_xq2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/download_bottom_press"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="星期二"
+            android:textColor="@color/black_light"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/days_xq3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/download_bottom_press"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="星期三"
+            android:textColor="@color/black_light"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/days_xq4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/download_bottom_press"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="星期四"
+            android:textColor="@color/black_light"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/days_xq5"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/download_bottom_press"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="星期五"
+            android:textColor="@color/black_light"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/days_xq6"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/download_bottom_press"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="星期六"
+            android:textColor="@color/black_light"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/days_xq7"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/download_bottom_press"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="星期日"
+            android:textColor="@color/black_light"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/days_quxiao"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/pop_layout"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>

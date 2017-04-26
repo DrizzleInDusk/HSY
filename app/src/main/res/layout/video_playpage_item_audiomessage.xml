@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/blue" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="1dp" >
+        <RelativeLayout
+            android:id="@+id/cover_rl"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/playpager_Albumcover"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/letter_item_img1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/playpage_Albumblurb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/cover_rl"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/huise"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/playpage_Albumname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/playpage_Albumblurb"
+            android:layout_alignTop="@+id/imageView1"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/xiansanjiao" />
+
+        <TextView
+            android:id="@+id/playpage_playAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text=""
+            android:textColor="@color/huise"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/bolang" />
+
+        <TextView
+            android:id="@+id/playpager_Albumepisode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text=""
+            android:textColor="@color/huise"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/playpage_item_dingyue"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/playpage_Albumblurb"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:background="@mipmap/yuanju_2"
+            android:text="订阅"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/huise" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/playpage_audioblurb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="这是一个简介"
+                android:textColor="@color/huise"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/playpage_item_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/item_back_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="75dp" >
+
+        <ImageView
+            android:id="@+id/playpage_dashang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/playpage_dashang" />
+
+        <TextView
+            android:id="@+id/playpage_dashangnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="已有0人打赏" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/dangshang_mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

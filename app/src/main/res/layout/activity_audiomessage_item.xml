@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/messageitem1_head_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp" >
+
+            <com.zm.hsy.myview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/messageitem1_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@color/touming"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="100dip"
+                app:riv_oval="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/messageitem1_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageitem1_head_rl"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="我要给你生猴子"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/messageitem1_towhat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/messageitem1_head_rl"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="8dp"
+            android:paddingRight="15dp"
+            android:text="最小二评论了我的声音：荷塘边的歌谣"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/messageitem1_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:padding="15dp"
+            android:text="刚刚"
+            android:textColor="@color/ashy_dark_dark"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</LinearLayout>

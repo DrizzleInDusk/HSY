@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/sing_line"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="80dp"
+        android:background="@color/single_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp" >
+
+            <com.zm.hsy.myview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/history_cover"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/details_img3"
+                app:riv_corner_radius="100dip"
+                app:riv_oval="true" />
+
+            <ImageView
+                android:id="@+id/history_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp"
+                android:src="@mipmap/choice_img"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/history_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/guangbo_item4_img1"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/history_audioname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩兔电台"
+                android:textColor="@color/ashy_dark_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/history_blurb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="17"
+                android:singleLine="true"
+                android:text="暂无节目单"
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/history_addtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="上次收听时间：2016-5-16-19:49:35"
+                android:textColor="@color/huise"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/history_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/appblue"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

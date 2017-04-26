@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_gd_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="分享"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/dialog_gd_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="投诉"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/dialog_gd_fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="返回上一页"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dialog_gd_qx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="取消"
+        android:textSize="18sp" />
+</LinearLayout>

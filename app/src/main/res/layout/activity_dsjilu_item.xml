@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dsjilu_addtime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="打赏时间: 2016-06-01 11:58:17"
+        android:textColor="@color/black_light"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/dsjilu_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="15dp"
+        android:text="nickname（用户）通过 给你的声音打赏了paymoney元"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/ashy" />
+</LinearLayout>

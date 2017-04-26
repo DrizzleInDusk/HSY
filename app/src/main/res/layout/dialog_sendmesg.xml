@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="给粉丝发送消息"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/dialog_smesg_mess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="请输入需要发送的消息"
+        android:padding="10dp"
+        android:textColor="@color/ashy"
+        android:textColorHint="@color/ashy"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_smesg_imgrl"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dialog_smesg_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/addphoto" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_smesg_qx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_smesg_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="发送"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

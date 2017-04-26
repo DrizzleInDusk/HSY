@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/touming" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="15dp"
+            android:background="@mipmap/beijing"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/pay_top_rl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:text="选择支付方式"
+                    android:textColor="@color/black_light"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/dialog_pay_dim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/guanbi" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/pay_top_v"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/pay_top_rl"
+                android:layout_height="1px"
+                android:background="@color/ashy_dark_dark" />
+
+            <RelativeLayout
+                android:id="@+id/pay_wx_rl"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/pay_top_v"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:id="@+id/wx_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/weixin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/wx_iv"
+                    android:text="微信支付"
+                    android:textColor="@color/black_light"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/dian_press" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pay_zfb_rl"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/pay_wx_rl"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:id="@+id/zfb_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/zhifubao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/zfb_iv"
+                    android:text="支付宝支付"
+                    android:textColor="@color/black_light"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/dian_press" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/pay_submit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:background="@mipmap/anniu" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

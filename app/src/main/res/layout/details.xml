@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/details_title" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@color/blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_duoshaoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="共XX集"
+                    android:textColor="@color/huise"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_paixu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="25dp"
+                    android:text="排序"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/iv_paixu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/tv_paixu"
+                    android:paddingLeft="15dp"
+                    android:src="@mipmap/letter_details_paixu" />
+
+                <TextView
+                    android:id="@+id/tv_xuanji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_paixu"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="25dp"
+                    android:text="选集"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/tv_xuanji"
+                    android:paddingLeft="15dp"
+                    android:src="@mipmap/letter_details_xuanji" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@color/blue" />
+
+            <com.zm.hsy.myview.MyListView
+                android:id="@+id/details_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:groupIndicator="@null" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/blue" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/scroll"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/activity_playbar" />
+    </RelativeLayout>
+
+</RelativeLayout>

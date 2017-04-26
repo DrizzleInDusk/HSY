@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/find_top_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="主播V认证"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/addv_rl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/addv_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/yousanjiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/addv_iv"
+                    android:gravity="center_vertical"
+                    android:text="认证条件"
+                    android:textColor="@color/black_light"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/das_guanli"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/addv_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/addv_touxiang" />
+
+                <TextView
+                    android:id="@+id/addv_head_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/addv_head"
+                    android:gravity="center_vertical"
+                    android:text="上传清晰头像"
+                    android:textColor="@color/black_light"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/addv_head_rl"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" >
+
+                    <TextView
+                        android:id="@+id/addv_head_add"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/layout_yuanjiao_lv"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="去上传"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/addv_head_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/addv_head_tv2"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@mipmap/chenggong"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/addv_head_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="已完成"
+                        android:textColor="@color/ashy_dark"
+                        android:textSize="14dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/addv_shouji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/addv_shouji" />
+
+                <TextView
+                    android:id="@+id/addv_shouji_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/addv_shouji"
+                    android:gravity="center_vertical"
+                    android:text="绑定手机号"
+                    android:textColor="@color/black_light"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/addv_shouji_rl"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" >
+
+                    <TextView
+                        android:id="@+id/addv_shouji_add"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/layout_yuanjiao_lv"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="去绑定"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/addv_shouji_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/addv_shouji_tv2"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@mipmap/chenggong"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/addv_shouji_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="已完成"
+                        android:textColor="@color/ashy_dark"
+                        android:textSize="14dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/addv_luyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/addv_luyin" />
+
+                <TextView
+                    android:id="@+id/addv_luyin_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/addv_luyin"
+                    android:gravity="center_vertical"
+                    android:text="上传1条声音"
+                    android:textColor="@color/black_light"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/addv_luyin_rl"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" >
+
+                    <TextView
+                        android:id="@+id/addv_luyin_add"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/layout_yuanjiao_lv"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="去上传"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/addv_luyin_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/addv_luyin_tv2"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@mipmap/chenggong"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/addv_luyin_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="已完成"
+                        android:textColor="@color/ashy_dark"
+                        android:textSize="14dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/jiaVCertification"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/layout_yuanjiao_lv"
+                android:layout_margin="45dp"
+                android:gravity="center"
+                android:text="申请认证"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

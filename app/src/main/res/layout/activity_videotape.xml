@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@mipmap/head_back">
+
+            <ImageView
+                android:id="@+id/back_top"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/tabvf2_back" />
+
+            <TextView
+                android:id="@+id/videotape_top_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="摄像"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/videotape_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <SurfaceView
+                android:id="@+id/videotape_videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"></SurfaceView>
+
+            <SurfaceView
+                android:id="@+id/videotape_playView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"></SurfaceView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/videotape_play"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/recordplay_press" />
+
+            <Chronometer
+                android:id="@+id/videotape_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/videotape_play"
+                android:format="%s"
+                android:paddingLeft="3dp"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/videotape_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/videotape_play"
+                android:paddingLeft="5dp"
+                android:src="@drawable/recordpoint_press" />
+
+            <TextView
+                android:id="@+id/videotape_REC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="9dp"
+                android:layout_toRightOf="@+id/videotape_point"
+                android:paddingLeft="5dp"
+                android:text="REC"
+                android:textColor="@color/black"
+                android:textSize="9dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/ashy_light" />
+
+            <TextView
+                android:textSize="20sp"
+                android:text="翻转"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/videotape_time"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginEnd="18dp"
+                android:id="@+id/video_fanzhuan" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/videotape_rl2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/sl">
+
+            <TextView
+                android:id="@+id/videotape_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/videotape_bt"
+                android:paddingRight="14dp"
+                android:text="重录"
+                android:textColor="@color/ashy_dark"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/videotape_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/videotape_bt" />
+
+            <TextView
+                android:id="@+id/videotape_bttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="点击开始录制"
+                android:textColor="@color/black_light"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/videotape_R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/videotape_bt"
+                android:paddingLeft="15dp"
+                android:text="保存"
+                android:textColor="@color/appblue"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_sou_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_toLeftOf="@+id/search_rl"
+                android:background="@mipmap/kuang_da_lv"
+                android:focusable="false"
+                android:focusableInTouchMode="true" >
+
+                <RelativeLayout
+                    android:id="@+id/share_rl2"
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true" >
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:id="@+id/share_rl2_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/xiasanjiao" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/share_sousuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="1dp"
+                    android:layout_toRightOf="@+id/share_rl2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/icon_sousuo" />
+
+                <EditText
+                    android:id="@+id/share_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="1dp"
+                    android:layout_toRightOf="@+id/share_sousuo"
+                    android:background="@null"
+                    android:hint="搜索声音、专辑、人"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/huise"
+                    android:textColorHint="@color/huise"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/kuang_xiao_lv" >
+
+                <TextView
+                    android:id="@+id/share_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="1dp"
+                    android:text="搜索"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/share_backbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="1dp"
+                    android:text="取消"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/search_item"
+        layout="@layout/activity_search_item" />
+
+   
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+ <include
+        android:id="@+id/search_item_bar"
+        layout="@layout/activity_search_item_bar"
+        android:visibility="gone" />
+            <include
+                android:id="@+id/searchf1"
+                layout="@layout/searchf1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="请稍后再试...."
+                android:textColor="@color/black_light"
+                android:textSize="18dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

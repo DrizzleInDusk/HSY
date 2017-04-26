@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue_light"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/publish_top_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/publish_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@mipmap/publishrecord_img" >
+                <com.zm.hsy.myview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/publish_cover"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/publishrecord_add_cover"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius="100dip"
+                    app:riv_oval="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publish_biaoti"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/yuanju_bkg"
+                android:focusable="false"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/publish_biaotitv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:text="添加标题"
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/publish_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/publish_biaotitv"
+                    android:background="@null"
+                    android:hint="请输入标题"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black_light"
+                    android:textColorHint="@color/black_light"
+                    android:textSize="13sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publish_xuanzhealbum"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/yuanju_bkg" >
+
+                <TextView
+                    android:id="@+id/publish_albumtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:text="选择专辑"
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/publish_album"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/publish_albumtv"
+                    android:gravity="center_vertical"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:text="请选择"
+                    android:textColor="@color/black_light"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publish_tongbu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/tongbu_backg" >
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/publish_xl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rl"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/publish_xl" />
+
+                <ImageView
+                    android:id="@+id/publish_wb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/publish_xl"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/publish_wb" />
+
+                <ImageView
+                    android:id="@+id/publish_rr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/publish_wb"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/publish_rr" />
+            </RelativeLayout>
+
+            <TextView 
+                android:id="@+id/publish_send"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:text="发布声音"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:background="@drawable/layout_yuanjiao_lv"/>
+            <TextView 
+                android:id="@+id/publish_save"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:text="暂存本地"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:background="@drawable/layout_yuanjiao_lv"/>
+         
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

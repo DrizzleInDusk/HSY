@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/compile_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/compile_top"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/head_back" >
+
+                <ImageView
+                    android:id="@+id/back_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/tabvf2_back" />
+
+                <TextView
+                    android:id="@+id/compile_text_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="声音信息"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <com.zm.hsy.myview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/compile_cover"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="100dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_yuanjiao"
+                android:focusable="false"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/compile_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="编辑标题"
+                    android:textColor="@color/huise"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/compile_audioname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toRightOf="@+id/compile_tv1"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:hint="请输入标题"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_light"
+                    android:textColorHint="@color/black_light"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_yuanjiao" >
+
+                <TextView
+                    android:id="@+id/compile_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="所属专辑"
+                    android:textColor="@color/huise"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/compile_aublmnametv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/compile_tv2"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black_light"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/compile_rl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/layout_yuanjiao_green_light" >
+
+                <TextView
+                    android:id="@+id/compile_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="保存修改"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

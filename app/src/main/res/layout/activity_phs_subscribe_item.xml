@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/sing_line"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/blue" />
+
+    <LinearLayout
+        android:id="@+id/subscribe_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/subscribe_cover"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:src="@mipmap/guangbo_item4_img1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/guangbo_item4_img1"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/subscribe_audioAlbumName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩兔电台"
+                android:textColor="@color/ashy_dark_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/subscribe_blurb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="17"
+                android:singleLine="true"
+                android:text="暂无节目单"
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/subscribe_addtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="更新时间：1天前"
+                android:textColor="@color/huise"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/subscribe_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/clear_img" />
+    </LinearLayout>
+
+</LinearLayout>

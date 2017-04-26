@@ -1,0 +1,793 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@mipmap/item_menu_play" />
+
+        <TextView
+            android:id="@+id/bangdan_biaosheng_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:singleLine="true"
+            android:text="一周飙升榜"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangdan_biaosheng"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bangdan_biaosheng_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/new_hot" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bangdan_biaosheng_img1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bangdan_biaosheng_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="1."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_biaosheng_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="2. "
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_biaosheng_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="3. "
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bangdan_biaosheng_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/item_back_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@mipmap/item_menu_play" />
+
+        <TextView
+            android:id="@+id/bangdan_rebo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:singleLine="true"
+            android:text="热播节目榜"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangdan_rebo"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bangdan_rebo_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/new_hot" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bangdan_rebo_img1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bangdan_rebo_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="1."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_rebo_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="2."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_rebo_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="3."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bangdan_rebo_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/item_back_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@mipmap/item_menu_play" />
+
+        <TextView
+            android:id="@+id/bangdan_video_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:singleLine="true"
+            android:text="热门影视榜"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangdan_video"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bangdan_video_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/new_hot" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bangdan_video_img1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bangdan_video_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="1."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_video_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="2."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_video_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="3."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bangdan_video_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/item_back_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@mipmap/item_menu_play" />
+
+        <TextView
+            android:id="@+id/bangdan_xiaoshuo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView4"
+            android:singleLine="true"
+            android:text="小说风云榜"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangdan_xiaoshuo"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bangdan_xiaoshuo_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/new_hot" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bangdan_xiaoshuo_img1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bangdan_xiaoshuo_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="1."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_xiaoshuo_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="2."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_xiaoshuo_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="3."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bangdan_xiaoshuo_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/item_back_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@mipmap/item_menu_play" />
+
+        <TextView
+            android:id="@+id/bangdan_fanchang_tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView5"
+            android:singleLine="true"
+            android:text="K歌翻唱榜"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangdan_fanchang"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bangdan_fanchang_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/new_hot" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bangdan_fanchang_img1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bangdan_fanchang_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="1."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_fanchang_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="2."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_fanchang_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="3."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bangdan_fanchang_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/item_back_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@mipmap/item_menu_play" />
+
+        <TextView
+            android:id="@+id/bangdan_qianli_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView6"
+            android:singleLine="true"
+            android:text="潜力新声榜"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangdan_qianli"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bangdan_qianli_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/new_hot" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bangdan_qianli_img1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bangdan_qianli_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="1."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_qianli_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="2."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_qianli_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="3."
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bangdan_qianli_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/item_back_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@mipmap/item_menu_play" />
+
+        <TextView
+            android:id="@+id/bangdan_zhubo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView7"
+            android:singleLine="true"
+            android:text="主播排行榜"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangdan_zhubo"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bangdan_zhubo_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/new_hot" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bangdan_zhubo_img1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bangdan_zhubo_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="1. "
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_zhubo_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="2. "
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_zhubo_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="3. "
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bangdan_zhubo_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/item_back_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@mipmap/item_menu_play" />
+
+        <TextView
+            android:id="@+id/bangdan_xinren_tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView8"
+            android:singleLine="true"
+            android:text="新人榜"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangdan_xinren"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bangdan_xinren_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/new_hot" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bangdan_xinren_img1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bangdan_xinren_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="1. "
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_xinren_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="2. "
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bangdan_xinren_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="3. "
+                android:textColor="@color/huise"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bangdan_xinren_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/item_back_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

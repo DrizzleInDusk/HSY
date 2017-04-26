@@ -1,0 +1,108 @@
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">慧思语</string>
+    <string name="app_tip">提示</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="shield_remind">您已被加入黑名单，请及时申述</string>
+    <string name="app_share_weixin_txt">我正在使用慧思语,快来一起使用吧</string>
+    <!-- 链接网络 -->
+    <string name="httpError">连接失败</string>
+    <string name="httpisNull">没有网络</string>
+    <!-- 下拉刷新 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+
+    <string name="play_error">不能打开这种媒体文件</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <!-- 首页标题栏 -->
+    <string name="home_title_tuijian">推荐</string>
+    <!-- demo2 -->
+    <string name="path">下载地址：</string>
+    <string name="button">开始下载</string>
+    <string name="success">下载完成</string>
+    <string name="error">下载出错</string>
+    <string name="stopbutton">暂停下载</string>
+    <string name="sdcarderror">没有SD卡</string>
+
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <string name="sdcard_readonly">对不起，你的sd没有插入或者没有音乐文件.</string>
+    <string name="no_sdcard">对不起，如果你没有sd卡，程序将不能运行。</string>
+    <string name="sdcard_shared">对不起，当你连接USB的时候程序不能运行。</string>
+    <string name="bad_extension_error">抱歉，尚不能编辑有类型的文件。</string>
+    <string name="no_extension_error">抱歉，不能编辑无扩展名（如.mp3、.wav）的文件</string>
+    <string name="alert_title_failure">错误</string>
+    <string name="too_small_error">无法保存过小的文件，请尝试使其更长。</string>
+    <string name="alert_ok_button">确定</string>
+    <string name="artist_name">慧思语FM</string>
+    <string name="save_success_message">已保存！</string>
+    <string name="start_marker">开始标记</string>
+    <string name="end_marker">结束标记</string>
+    <string name="rewind">倒回</string>
+    <string name="play">开始</string>
+    <string name="stop">停止</string>
+    <string name="ffwd">快进</string>
+    <string name="zoom_in">放大</string>
+    <string name="zoom_out">缩小</string>
+    <string name="save_button">保存</string>
+    <string name="start_label">开始:</string>
+    <string name="end_label">结束:</string>
+
+    <string name="edit_intent">编辑</string>
+
+    <string name="time_seconds">秒数</string>
+    <string name="button_options">选项</string>
+    <string name="no_unique_filename">无法找到文件名</string>
+    <string name="delete_tmp_error">删除临时文件错误</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_reset">重新设置</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_show_all_audio">显示所有的音频</string>
+
+    <string name="progress_dialog_loading">载入中...</string>
+    <string name="progress_dialog_saving">保存中...</string>
+    <string name="write_error">写文件时出错</string>
+    <string name="read_error">读文件时出错</string>
+    <string name="alert_title_success">成功</string>
+    <string name="alert_yes_button">是的，可以!</string>
+    <string name="alert_no_button">不，谢谢.</string>
+    <string name="no_space_error">你的sd卡满了，删除点东西吧</string>
+
+    <string name="error_server_prompt">关于音乐快剪</string>
+    <string name="server_title">分享您的数据！</string>
+    <string name="server_prompt">可以发送您创建的铃声及其他声音的数据，允许我们收集统计资料吗？</string>
+    <string name="server_yes">可发送</string>
+    <string name="server_later">以后询问</string>
+    <string name="server_never">从不</string>
+
+
+    <string name="error_no_sdcard">没有SD卡，无法存储录音数据</string>
+    <string name="error_state_record">正在录音中，请先停止录音</string>
+    <string name="error_unknown">无法识别的错误</string>
+
+    <string name="mon">周一</string>
+    <string name="tue">周二</string>
+    <string name="wed">周三</string>
+    <string name="thu">周四</string>
+    <string name="fri">周五</string>
+    <string name="sat">周六</string>
+    <string name="sun">周日</string>
+    <string name="cycle_sure">确定</string>
+    <string name="vibration">震动</string>
+    <string name="ring">铃声</string>
+</resources>

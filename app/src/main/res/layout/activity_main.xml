@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboardRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue" >
+
+    <RelativeLayout
+        android:id="@+id/main_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/main_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="51dp"
+            android:layout_above="@+id/ll" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/bottom_back"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/hrv1"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bottom_press"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/hbt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/bottom_1"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hrv2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bottom_press"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/hbt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/bottom_2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hrv3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.zm.hsy.myview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/hbt3"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/touming"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius="100dip"
+                        app:riv_oval="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hrv4"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bottom_press"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/hbt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/bottom_3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hrv5"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bottom_press"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/hbt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/bottom_4" />
+
+                    <TextView
+                        android:id="@+id/main_hongdian"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/yuan_"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

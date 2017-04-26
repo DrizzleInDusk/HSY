@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zm.hsy">
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 极光 -->
+    <permission
+        android:name="com.zm.hsy.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.zm.hsy.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 友盟权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activity.WelfirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AddBBSTopicActivity" />
+        <activity android:name=".activity.AddVActivity" />
+        <activity android:name=".activity.AlarmActivity" />
+        <activity android:name=".activity.BangdanTitleListview" />
+        <activity android:name=".activity.BangdingActivity" />
+        <activity android:name=".activity.BangdingSjActivity" />
+        <activity android:name=".activity.BangdingSjnextActivity" />
+        <activity android:name=".activity.BangzhuActivity" />
+        <activity android:name=".activity.BBSActivity" />
+        <activity android:name=".activity.BBSCardActivity" />
+        <activity android:name=".activity.BBSCommunityActivity" />
+        <activity android:name=".activity.BBSFameHallActivity" />
+        <activity android:name=".activity.BBSGuanliActivity" />
+        <activity android:name=".activity.BuildAublmActivity" />
+        <activity android:name=".activity.BuildBBSActivity" />
+        <activity android:name=".activity.BuildVariationActivity" />
+        <activity android:name=".activity.CommunityPhotosActivity" />
+        <activity android:name=".activity.ContactsActivity" />
+        <activity android:name=".activity.DaShangActivity" />
+        <activity android:name=".activity.DetailsActivity" />
+        <activity android:name=".activity.DetailsPlayActivity" />
+        <activity android:name=".activity.DsjiluActivity" />
+        <activity android:name=".activity.EarningsActivity" />
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity android:name=".activity.FindFriendActivity" />
+        <activity android:name=".activity.ForgetPWActivity" />
+        <activity android:name=".activity.GotoVariationActivity" />
+        <activity android:name=".activity.GoumaijifenActivity" />
+        <activity android:name=".activity.GuanYuActivity" />
+        <activity android:name=".activity.HelpActivity" />
+        <activity android:name=".activity.ImageGridActivity" />
+        <activity android:name=".activity.InformationActivity" />
+        <activity android:name=".activity.JoinVariationActivity" />
+        <activity android:name=".activity.LianxiActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.ManageActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.MessageAudioActivity" />
+        <activity android:name=".activity.MoreAlbumActivity" />
+        <activity android:name=".activity.MoreHotCommunityActivity" />
+        <activity android:name=".activity.MoreHotTopicActivity" />
+        <activity android:name=".activity.MoreMyCommunityActivity" />
+        <activity android:name=".activity.MoreTjActivity" />
+        <activity android:name=".activity.MoreZhuboActivity" />
+        <activity android:name=".activity.MusicDownActivity" />
+        <activity android:name=".activity.MyAublmActivity" />
+        <activity android:name=".activity.MyAudioActivity" />
+        <activity android:name=".activity.MyAudioCompileActivity" />
+        <activity android:name=".activity.MyConcemFansActivity" />
+        <activity android:name=".activity.MyPHSActivity" />
+        <activity android:name=".activity.MyPushMessageActivity" />
+        <activity android:name=".activity.MytieActivity" />
+        <activity android:name=".activity.PhotoActivity" />
+        <activity android:name=".activity.PhotoalbumActivity" />
+        <activity android:name=".activity.PublishRecordActivity" />
+        <activity android:name=".activity.RadioStationActivity" />
+        <activity android:name=".activity.RadioStationPlayerActivity" />
+        <activity android:name=".activity.RecordActivity" />
+        <activity android:name=".activity.RingActivity" />
+        <activity android:name=".activity.RingF2ListActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.SettingCleanActivity" />
+        <activity android:name=".activity.ShezhizfbActivity" />
+        <activity android:name=".activity.SoundtrackActivity" />
+        <activity android:name=".activity.TabVF2Activity" />
+        <activity android:name=".activity.TabVF3Activity" />
+        <activity android:name=".activity.TaskActivity" />
+        <activity android:name=".activity.Top50Activity" />
+        <activity android:name=".activity.TuisongActivity" />
+        <activity android:name=".activity.VarbmrsActivity" />
+        <activity android:name=".activity.VariationActivity" />
+        <activity android:name=".activity.VariationMesActivity" />
+        <activity android:name=".activity.VideoPlayActivity" />
+        <activity android:name=".activity.VideoPlayingActivity" />
+        <activity android:name=".activity.VideoTapeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.VideoviewActivity" />
+        <activity android:name=".activity.WelActivity" />
+        <activity android:name=".activity.XGAlbumActivity" />
+        <activity android:name=".activity.XinxianshiActivity" />
+        <activity android:name=".activity.YinpintitleListview" />
+        <activity android:name=".activity.YinsiActivity" />
+        <activity android:name=".activity.YinsiHmdActivity" />
+        <activity android:name=".activity.YinsiTyActivity" />
+        <activity android:name=".activity.YinsiXxsActivity" />
+        <activity android:name=".activity.ZhuboActivity" />
+
+        <!--闹铃-->
+        <receiver
+            android:name=".util.AlarmBroadcastReceiver"
+            android:process=":remote"></receiver>
+        <!--<activity android:name=".activity.AlarmActivity" />-->
+        <!-- ###################友盟###################### -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="576a4843e0f55a61af0035b5"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="hsyfm123654789" />
+        <!-- ###################微信回掉页###################### -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!-- ###################高德地图###################### -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="bd7186a71ced5004d16f85745364984b" />
+        <service android:name="com.amap.api.location.APSService"></service>
+
+        <!-- ###################支付宝###################### -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!-- ============极光开始============== -->
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle"></activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.zm.hsy" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.zm.hsy" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.zm.hsy" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="ae474c51db6846039f7bb67d" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <!-- QQ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105492744" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- renren sso Permission for Unit Test -->
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+</manifest>

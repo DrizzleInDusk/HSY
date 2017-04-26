@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/messageitem2_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@mipmap/mess_img"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/messageitem2_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageitem2_head"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="我要给你生猴子"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/messageitem2_towhat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/right_ll"
+            android:layout_toRightOf="@+id/messageitem2_head"
+            android:paddingRight="5dp"
+            android:text="我评论了最小二的声音：荷塘边的歌谣"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/right_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/right_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/messageitem2_cover"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@mipmap/mess_img2" />
+
+                <ImageView
+                    android:id="@+id/messageitem2_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_play" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/messageitem2_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:padding="15dp"
+                    android:text="刚刚"
+                    android:textColor="@color/ashy_dark_dark"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

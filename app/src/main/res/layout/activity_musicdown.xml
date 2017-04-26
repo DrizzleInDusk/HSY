@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/musicdown_toprl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/head_back">
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/find_top_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="批量下载"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/musicdown_bottomrl"
+        android:layout_below="@+id/musicdown_toprl"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/blue_light">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="共16集"
+                    android:textColor="@color/black_light"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@mipmap/letter_details_xuanji"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:text="选集（1~16）"
+                    android:textColor="@color/black_light"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <com.zm.hsy.myview.MyListView
+                android:id="@+id/musicdown_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:groupIndicator="@null" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/musicdown_bottomrl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/drowline_ashy"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_yuanjiao_blue"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:text="立即下载"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:drawableRight="@drawable/yuanquan_bottom_press"
+            android:text="全选本页"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@color/appblue"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+</RelativeLayout>

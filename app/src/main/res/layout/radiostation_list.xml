@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/txl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/radiostation_city"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/station_playbar"
+            android:paddingLeft="13dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/radiostation_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/radiostation_city"
+            android:layout_toLeftOf="@+id/station_playbar"
+            android:paddingLeft="15dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/station_playbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="30dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/playbar_press_dark" />
+
+    </RelativeLayout>
+
+</LinearLayout>

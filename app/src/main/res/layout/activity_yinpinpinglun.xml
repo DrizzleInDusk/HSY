@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/tabvf_onelist_top"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back">
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/tabvf_text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="本地电台"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabvf_onelist_top"
+        android:layout_above="@+id/message_rl2"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.zm.hsy.myview.MyListView
+                android:id="@+id/tabvf_onelist_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:groupIndicator="@null" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/message_rl2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/letter_details_back" >
+
+            <EditText
+                android:id="@+id/playpage_pinglun_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="写评论"
+                android:imeOptions="actionSend"
+                android:textColor="@color/huise"
+                android:textSize="13sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/playpage_dianping_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/layout_yuanjiao_lv"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/playpage_dianping_xihuan"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/playpage_dianping_fenxiang"
+            android:padding="15dp"
+            android:src="@drawable/dianzan_press" />
+
+        <ImageView
+            android:id="@+id/playpage_dianping_fenxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:layout_toLeftOf="@+id/playpage_dianping_send"
+            android:src="@mipmap/playpage_dianping_fenxiang_hui"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>

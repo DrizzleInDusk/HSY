@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/head_back" >
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/tabvf2_back" />
+
+        <TextView
+            android:id="@+id/build_aublm_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="创建专辑"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/build_aublm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/build_aublm_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@mipmap/publishrecord_img" >
+                <com.zm.hsy.myview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/build_aublm_cover"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/publishrecord_add_cover"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="100dip"
+                    app:riv_oval="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/usertype"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/type_gongkai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/yuanquan_bottom_press"
+                        android:paddingLeft="5dp"
+                        android:text="公开" />
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <RadioButton
+                        android:id="@+id/type_simi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/yuanquan_bottom_press"
+                        android:paddingLeft="5dp"
+                        android:text="私密" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/build_aublm_biaoti"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/yuanju_bkg"
+                android:focusable="false"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/build_aublm_biaotitv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:text="专辑标题"
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/build_aublm_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/build_aublm_biaotitv"
+                    android:background="@null"
+                    android:hint="请输入专辑名称"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black_light"
+                    android:textColorHint="@color/black_light"
+                    android:textSize="13sp" >
+                </EditText>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/build_aublm_jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/yuanju_bkg"
+                android:focusable="false"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/build_aublm_jianjietv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:text="专辑描述"
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/build_aublm_jianjie_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/build_aublm_jianjietv"
+                    android:background="@null"
+                    android:hint="请输入专辑简介"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black_light"
+                    android:textColorHint="@color/black_light"
+                    android:textSize="13sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/build_aublm_yixuanze"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/publish_albumtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:text="已选中："
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/build_aublm_yixuanze_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/publish_albumtv"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/appblue"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/build_aublm_xuanzhealbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/build_albumtv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="添加标签"
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/build_albumtv2" >
+
+                    <HorizontalScrollView
+                        android:id="@+id/hsv_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@mipmap/yuanju_bkg"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/build_album_ll1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <GridView
+                             android:id="@+id/build_album_gview1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:listSelector="@null"
+                                android:numColumns="auto_fit"
+                                android:scrollbars="none"
+                                android:stretchMode="spacingWidthUniform" >
+                            </GridView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:id="@+id/hsv_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/hsv_1"
+                        android:layout_marginTop="5dp"
+                        android:background="@mipmap/yuanju_bkg"
+                        android:scrollbars="none"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/build_album_ll2"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="fill_parent" >
+
+                            <GridView
+                                android:id="@+id/build_album_gview2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:listSelector="@null"
+                                android:numColumns="auto_fit"
+                                android:scrollbars="none"
+                                android:stretchMode="spacingWidthUniform" >
+                            </GridView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:id="@+id/hsv_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/hsv_2"
+                        android:layout_marginTop="5dp"
+                        android:background="@mipmap/yuanju_bkg"
+                        android:scrollbars="none"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/build_album_ll3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <GridView
+                                android:id="@+id/build_album_gview3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:listSelector="@null"
+                                android:numColumns="auto_fit"
+                                android:scrollbars="none"
+                                android:stretchMode="spacingWidthUniform" >
+                            </GridView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <HorizontalScrollView
+                        android:id="@+id/hsv_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/hsv_3"
+                        android:layout_marginTop="5dp"
+                        android:background="@mipmap/yuanju_bkg"
+                        android:scrollbars="none"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/build_album_ll4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <GridView
+                                android:id="@+id/build_album_gview4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:listSelector="@null"
+                                android:numColumns="auto_fit"
+                                android:scrollbars="none"
+                                android:stretchMode="spacingWidthUniform" >
+                            </GridView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

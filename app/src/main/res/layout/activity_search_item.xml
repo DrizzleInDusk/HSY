@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/share_records"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="你搜过的"
+            android:textColor="@color/huise"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/share_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="清空历史"
+            android:textColor="@color/appblue"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/share_history_tv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="暂无记录"
+        android:textColor="@color/huise"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <com.zm.hsy.myview.WordWrapView
+        android:id="@+id/share_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" 
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashy" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="大家都在搜"
+            android:textColor="@color/huise"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/share_recommend_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="暂无推荐"
+        android:textColor="@color/huise"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <com.zm.hsy.myview.WordWrapView
+        android:id="@+id/share_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

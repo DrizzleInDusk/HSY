@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.zm.hsy.myview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/playpage_dashangimg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="100dip"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/playpage_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/huise"
+        android:textSize="10dp" />
+
+</LinearLayout>

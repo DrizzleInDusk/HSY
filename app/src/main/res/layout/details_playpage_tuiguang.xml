@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="1dp" >
+
+        <ImageView
+            android:id="@+id/playpager_tuiguang_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@mipmap/letter_item_img1" />
+
+        <TextView
+            android:id="@+id/playpage_tuiguang_blurb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/playpager_tuiguang_cover"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="“奉天承运皇帝，诏曰：命苏国一二三四"
+            android:textColor="@color/huise"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/playpage_tuiguang_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="公主闯秦关"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/playpage_tuiguang_blurb"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/xiansanjiao" />
+
+        <TextView
+            android:id="@+id/playpage_tuiguang_playAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="4.7万"
+            android:textColor="@color/huise"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/bolang" />
+
+        <TextView
+            android:id="@+id/playpager_tuiguang_episode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="15集"
+            android:textColor="@color/huise"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/item_tuiguang_img1"
+            android:layout_width="30dp"
+            android:layout_height="13dp"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:background="@mipmap/yuanju"
+            android:text="推广"
+            android:textColor="@color/huise"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

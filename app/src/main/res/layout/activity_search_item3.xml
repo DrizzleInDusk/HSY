@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <RelativeLayout
+            android:id="@+id/search_item1_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" >
+
+            <com.zm.hsy.myview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/search_uesr_head"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/touxiang"
+                android:scaleType="centerCrop"
+                app:riv_border_color="@color/blue"
+                app:riv_border_width="2dip"
+                app:riv_corner_radius="100dip"
+                app:riv_oval="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/search_item1_iv2"
+            android:layout_toRightOf="@+id/search_item1_rl"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" >
+
+                <TextView
+                    android:id="@+id/search_uesr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="熊孩子"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+
+                <ImageView
+                    android:id="@+id/search_uesr_members"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/search_uesr_name"
+                    android:paddingLeft="15dp"
+                    android:src="@mipmap/v" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" >
+
+                <TextView
+                    android:id="@+id/search_uesr_audioCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="声音"
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/search_uesr_concemFans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/search_uesr_audioCount"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:text="粉丝"
+                    android:textColor="@color/black_light"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/search_uesr_zuiduo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:text="有声小说"
+                android:textColor="@color/appblue"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
